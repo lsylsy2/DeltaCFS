@@ -116,7 +116,7 @@ int main(int argc, char** argv) {
         return 0;
     }
 	fp=fopen(argv[1], "rb");
-    tmpprefix=pathprefix=(string)argv[2];
+    pathprefix=(string)argv[2];
     if (argc>2) {
         maxinterval=atoi(argv[3])*100000;
     }
