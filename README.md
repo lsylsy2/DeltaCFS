@@ -5,3 +5,10 @@ This is a (Dropbox-like) cloud synchronization prototype system, which could syn
 The source code is coming out very soon.
 
 In the trace/ directory, we provide two typical traces on the desktop/mobile environment.
+
+##dependencies
+Debian/Ubuntu:
+```apt-get install build-essential libgearman-dev librsync-dev git gearman-server libfuse-dev libleveldb-dev libhiredis-dev redis-server pkg-config uthash-dev```
+
+CentOS:
+```yum install fuse-devel librsync-devel libgearman-devel gearmand leveldb-devel uthash-devel hiredis-devel redis gcc gcc-c++```
