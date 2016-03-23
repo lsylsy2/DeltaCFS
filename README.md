@@ -6,9 +6,22 @@ The source code is coming out very soon.
 
 In the trace/ directory, we provide two typical traces on the desktop/mobile environment.
 
-##dependencies
+##Dependencies
+
 Debian/Ubuntu:
-```apt-get install build-essential libgearman-dev librsync-dev git gearman-server libfuse-dev libleveldb-dev libhiredis-dev redis-server pkg-config uthash-dev```
+```apt-get install build-essential libgearman-dev librsync-dev gearman-server libfuse-dev libleveldb-dev libhiredis-dev redis-server pkg-config uthash-dev```
 
 CentOS:
 ```yum install fuse-devel librsync-devel libgearman-devel gearmand leveldb-devel uthash-devel hiredis-devel redis gcc gcc-c++```
+
+##Build and run
+
+Client:
+
+- in librsync-mod, ```./configure``` and ```make```
+
+- in client, ```make``` and ```sudo run_client.sh```
+
+Server:
+
+- in server, ```make``` and ```run_server.sh```
